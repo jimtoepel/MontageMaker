@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1050CE91C87FEF20050E888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1050CE81C87FEF20050E888 /* AppDelegate.swift */; };
+		B1050CEB1C87FEF20050E888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1050CEA1C87FEF20050E888 /* Assets.xcassets */; };
+		B1050CEE1C87FEF20050E888 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1050CEC1C87FEF20050E888 /* MainMenu.xib */; };
+		B1050CF91C87FEF20050E888 /* MontageMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1050CF81C87FEF20050E888 /* MontageMakerTests.swift */; };
+		B1050D041C87FEF20050E888 /* MontageMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1050D031C87FEF20050E888 /* MontageMakerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1050CF51C87FEF20050E888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1050CDD1C87FEF20050E888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1050CE41C87FEF20050E888;
+			remoteInfo = MontageMaker;
+		};
+		B1050D001C87FEF20050E888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1050CDD1C87FEF20050E888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1050CE41C87FEF20050E888;
+			remoteInfo = MontageMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1050CE51C87FEF20050E888 /* MontageMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MontageMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1050CE81C87FEF20050E888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1050CEA1C87FEF20050E888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1050CED1C87FEF20050E888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B1050CEF1C87FEF20050E888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1050CF41C87FEF20050E888 /* MontageMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MontageMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1050CF81C87FEF20050E888 /* MontageMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontageMakerTests.swift; sourceTree = "<group>"; };
+		B1050CFA1C87FEF20050E888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1050CFF1C87FEF20050E888 /* MontageMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MontageMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1050D031C87FEF20050E888 /* MontageMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontageMakerUITests.swift; sourceTree = "<group>"; };
+		B1050D051C87FEF20050E888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1050CE21C87FEF20050E888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1050CF11C87FEF20050E888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1050CFC1C87FEF20050E888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1050CDC1C87FEF20050E888 = {
+			isa = PBXGroup;
+			children = (
+				B1050CE71C87FEF20050E888 /* MontageMaker */,
+				B1050CF71C87FEF20050E888 /* MontageMakerTests */,
+				B1050D021C87FEF20050E888 /* MontageMakerUITests */,
+				B1050CE61C87FEF20050E888 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1050CE61C87FEF20050E888 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1050CE51C87FEF20050E888 /* MontageMaker.app */,
+				B1050CF41C87FEF20050E888 /* MontageMakerTests.xctest */,
+				B1050CFF1C87FEF20050E888 /* MontageMakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1050CE71C87FEF20050E888 /* MontageMaker */ = {
+			isa = PBXGroup;
+			children = (
+				B1050CE81C87FEF20050E888 /* AppDelegate.swift */,
+				B1050CEA1C87FEF20050E888 /* Assets.xcassets */,
+				B1050CEC1C87FEF20050E888 /* MainMenu.xib */,
+				B1050CEF1C87FEF20050E888 /* Info.plist */,
+			);
+			path = MontageMaker;
+			sourceTree = "<group>";
+		};
+		B1050CF71C87FEF20050E888 /* MontageMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1050CF81C87FEF20050E888 /* MontageMakerTests.swift */,
+				B1050CFA1C87FEF20050E888 /* Info.plist */,
+			);
+			path = MontageMakerTests;
+			sourceTree = "<group>";
+		};
+		B1050D021C87FEF20050E888 /* MontageMakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1050D031C87FEF20050E888 /* MontageMakerUITests.swift */,
+				B1050D051C87FEF20050E888 /* Info.plist */,
+			);
+			path = MontageMakerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1050CE41C87FEF20050E888 /* MontageMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1050D081C87FEF20050E888 /* Build configuration list for PBXNativeTarget "MontageMaker" */;
+			buildPhases = (
+				B1050CE11C87FEF20050E888 /* Sources */,
+				B1050CE21C87FEF20050E888 /* Frameworks */,
+				B1050CE31C87FEF20050E888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MontageMaker;
+			productName = MontageMaker;
+			productReference = B1050CE51C87FEF20050E888 /* MontageMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1050CF31C87FEF20050E888 /* MontageMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1050D0B1C87FEF20050E888 /* Build configuration list for PBXNativeTarget "MontageMakerTests" */;
+			buildPhases = (
+				B1050CF01C87FEF20050E888 /* Sources */,
+				B1050CF11C87FEF20050E888 /* Frameworks */,
+				B1050CF21C87FEF20050E888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1050CF61C87FEF20050E888 /* PBXTargetDependency */,
+			);
+			name = MontageMakerTests;
+			productName = MontageMakerTests;
+			productReference = B1050CF41C87FEF20050E888 /* MontageMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1050CFE1C87FEF20050E888 /* MontageMakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1050D0E1C87FEF20050E888 /* Build configuration list for PBXNativeTarget "MontageMakerUITests" */;
+			buildPhases = (
+				B1050CFB1C87FEF20050E888 /* Sources */,
+				B1050CFC1C87FEF20050E888 /* Frameworks */,
+				B1050CFD1C87FEF20050E888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1050D011C87FEF20050E888 /* PBXTargetDependency */,
+			);
+			name = MontageMakerUITests;
+			productName = MontageMakerUITests;
+			productReference = B1050CFF1C87FEF20050E888 /* MontageMakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1050CDD1C87FEF20050E888 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = FunderDevelopment;
+				TargetAttributes = {
+					B1050CE41C87FEF20050E888 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					B1050CF31C87FEF20050E888 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B1050CE41C87FEF20050E888;
+					};
+					B1050CFE1C87FEF20050E888 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B1050CE41C87FEF20050E888;
+					};
+				};
+			};
+			buildConfigurationList = B1050CE01C87FEF20050E888 /* Build configuration list for PBXProject "MontageMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1050CDC1C87FEF20050E888;
+			productRefGroup = B1050CE61C87FEF20050E888 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1050CE41C87FEF20050E888 /* MontageMaker */,
+				B1050CF31C87FEF20050E888 /* MontageMakerTests */,
+				B1050CFE1C87FEF20050E888 /* MontageMakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1050CE31C87FEF20050E888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1050CEB1C87FEF20050E888 /* Assets.xcassets in Resources */,
+				B1050CEE1C87FEF20050E888 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1050CF21C87FEF20050E888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1050CFD1C87FEF20050E888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1050CE11C87FEF20050E888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1050CE91C87FEF20050E888 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1050CF01C87FEF20050E888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1050CF91C87FEF20050E888 /* MontageMakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1050CFB1C87FEF20050E888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1050D041C87FEF20050E888 /* MontageMakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1050CF61C87FEF20050E888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1050CE41C87FEF20050E888 /* MontageMaker */;
+			targetProxy = B1050CF51C87FEF20050E888 /* PBXContainerItemProxy */;
+		};
+		B1050D011C87FEF20050E888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1050CE41C87FEF20050E888 /* MontageMaker */;
+			targetProxy = B1050D001C87FEF20050E888 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1050CEC1C87FEF20050E888 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1050CED1C87FEF20050E888 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1050D061C87FEF20050E888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1050D071C87FEF20050E888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B1050D091C87FEF20050E888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MontageMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = funderDevelopment.MontageMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1050D0A1C87FEF20050E888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MontageMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = funderDevelopment.MontageMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B1050D0C1C87FEF20050E888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MontageMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = funderDevelopment.MontageMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MontageMaker.app/Contents/MacOS/MontageMaker";
+			};
+			name = Debug;
+		};
+		B1050D0D1C87FEF20050E888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MontageMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = funderDevelopment.MontageMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MontageMaker.app/Contents/MacOS/MontageMaker";
+			};
+			name = Release;
+		};
+		B1050D0F1C87FEF20050E888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MontageMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = funderDevelopment.MontageMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MontageMaker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B1050D101C87FEF20050E888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MontageMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = funderDevelopment.MontageMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MontageMaker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1050CE01C87FEF20050E888 /* Build configuration list for PBXProject "MontageMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1050D061C87FEF20050E888 /* Debug */,
+				B1050D071C87FEF20050E888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1050D081C87FEF20050E888 /* Build configuration list for PBXNativeTarget "MontageMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1050D091C87FEF20050E888 /* Debug */,
+				B1050D0A1C87FEF20050E888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B1050D0B1C87FEF20050E888 /* Build configuration list for PBXNativeTarget "MontageMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1050D0C1C87FEF20050E888 /* Debug */,
+				B1050D0D1C87FEF20050E888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B1050D0E1C87FEF20050E888 /* Build configuration list for PBXNativeTarget "MontageMakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1050D0F1C87FEF20050E888 /* Debug */,
+				B1050D101C87FEF20050E888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1050CDD1C87FEF20050E888 /* Project object */;
+}
