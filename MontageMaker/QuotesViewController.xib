@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="QuotesViewController" customModule="MontageMaker" customModuleProvider="target">
             <connections>
+                <outlet property="quoteLabel" destination="uAF-qj-qyp" id="ksd-vc-rgk"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -16,20 +17,16 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55F-CR-IUP">
-                    <rect key="frame" x="184" y="13" width="113" height="32"/>
-                    <buttonCell key="cell" type="push" title="Quit Quotes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1o2-cc-uqq">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-qj-qyp">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-qj-qyp">
                     <rect key="frame" x="55" y="120" width="370" height="43"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Quote" placeholderString="&quot;Quote Goes Here&quot;" id="gDq-nn-ZN1">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="dCo-gv-qVC"/>
+                    </connections>
                 </textField>
                 <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23H-I2-Dgx">
                     <rect key="frame" x="429" y="12" width="33" height="247"/>
@@ -40,6 +37,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="goRight:" target="-2" id="12w-Zf-YxK"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hn6-pY-wqX">
                     <rect key="frame" x="18" y="12" width="33" height="247"/>
@@ -50,14 +50,31 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="goLeft:" target="-2" id="JrS-NM-fz5"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="55F-CR-IUP">
+                    <rect key="frame" x="184" y="13" width="113" height="32"/>
+                    <buttonCell key="cell" type="push" title="Quit Quotes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1o2-cc-uqq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quit:" target="-2" id="hqj-VL-gNI"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>
+                <constraint firstItem="55F-CR-IUP" firstAttribute="top" secondItem="uAF-qj-qyp" secondAttribute="bottom" constant="79" id="FTh-SB-DYs"/>
                 <constraint firstAttribute="bottom" secondItem="hn6-pY-wqX" secondAttribute="bottom" constant="15" id="JMc-i9-7OC"/>
+                <constraint firstItem="55F-CR-IUP" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="KY7-lj-xJg"/>
                 <constraint firstItem="hn6-pY-wqX" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="Nlo-wZ-9V8"/>
                 <constraint firstAttribute="bottom" secondItem="23H-I2-Dgx" secondAttribute="bottom" constant="15" id="Rzg-Oc-3To"/>
+                <constraint firstAttribute="bottom" secondItem="55F-CR-IUP" secondAttribute="bottom" constant="20" symbolic="YES" id="Twh-A0-7sq"/>
                 <constraint firstItem="23H-I2-Dgx" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="15" id="ZhT-xe-UmQ"/>
                 <constraint firstAttribute="trailing" secondItem="23H-I2-Dgx" secondAttribute="trailing" constant="20" id="fBa-WP-i0B"/>
+                <constraint firstItem="55F-CR-IUP" firstAttribute="centerX" secondItem="uAF-qj-qyp" secondAttribute="centerX" id="kyR-pR-vle"/>
                 <constraint firstItem="hn6-pY-wqX" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="15" id="zbt-Z8-nnc"/>
             </constraints>
         </customView>

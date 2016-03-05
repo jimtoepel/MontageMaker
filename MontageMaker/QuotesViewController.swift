@@ -9,10 +9,23 @@
 import Cocoa
 
 class QuotesViewController: NSViewController {
+    @IBOutlet weak var quoteLabel: NSTextField!
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+// MARK: Actions
+
+extension QuotesViewController {
+    @IBAction func goLeft(sender: NSButton) {
+        
     }
+    
+    @IBAction func goRight(sender: NSButton) {
+        
+    }
+    
+    @IBAction func quit(sender: NSButton){
+        
+    }
+    
     
 }
