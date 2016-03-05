@@ -15,6 +15,55 @@
         <customView id="Hz6-mo-xeY">
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55F-CR-IUP">
+                    <rect key="frame" x="184" y="13" width="113" height="32"/>
+                    <buttonCell key="cell" type="push" title="Quit Quotes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1o2-cc-uqq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-qj-qyp">
+                    <rect key="frame" x="55" y="120" width="370" height="43"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Quote" placeholderString="&quot;Quote Goes Here&quot;" id="gDq-nn-ZN1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23H-I2-Dgx">
+                    <rect key="frame" x="429" y="12" width="33" height="247"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="242" id="Mqc-oG-79N"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="NSGoRightTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VBM-du-19B">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hn6-pY-wqX">
+                    <rect key="frame" x="18" y="12" width="33" height="247"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="242" id="8if-Gm-vl5"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="NSGoLeftTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="J9a-N2-b4l">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hn6-pY-wqX" secondAttribute="bottom" constant="15" id="JMc-i9-7OC"/>
+                <constraint firstItem="hn6-pY-wqX" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="Nlo-wZ-9V8"/>
+                <constraint firstAttribute="bottom" secondItem="23H-I2-Dgx" secondAttribute="bottom" constant="15" id="Rzg-Oc-3To"/>
+                <constraint firstItem="23H-I2-Dgx" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="15" id="ZhT-xe-UmQ"/>
+                <constraint firstAttribute="trailing" secondItem="23H-I2-Dgx" secondAttribute="trailing" constant="20" id="fBa-WP-i0B"/>
+                <constraint firstItem="hn6-pY-wqX" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="15" id="zbt-Z8-nnc"/>
+            </constraints>
         </customView>
     </objects>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+    </resources>
 </document>
