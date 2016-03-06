@@ -17,6 +17,20 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-qj-qyp">
+                    <rect key="frame" x="66" y="120" width="349" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="2Yf-oj-00f"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="&quot;This is a bunch of test verbage to see if word wrap works? It should!&quot; - Jim Toepel" placeholderString="" id="gDq-nn-ZN1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="dCo-gv-qVC"/>
+                    </connections>
+                </textField>
                 <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23H-I2-Dgx">
                     <rect key="frame" x="429" y="12" width="33" height="247"/>
                     <constraints>
@@ -53,20 +67,38 @@
                         <action selector="quit:" target="-2" id="hqj-VL-gNI"/>
                     </connections>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-qj-qyp">
-                    <rect key="frame" x="66" y="120" width="349" height="43"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="350" id="2Yf-oj-00f"/>
-                    </constraints>
-                    <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="&quot;This is a bunch of test verbage to see if word wrap works? It should!&quot; - Jim Toepel" placeholderString="" id="gDq-nn-ZN1">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3O-Rw-PlC">
+                    <rect key="frame" x="281" y="235" width="62" height="18"/>
+                    <buttonCell key="cell" type="radio" title="Happy" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="L6v-rk-ldv">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                    <connections>
-                        <outlet property="delegate" destination="-2" id="dCo-gv-qVC"/>
-                    </connections>
-                </textField>
+                    </buttonCell>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXX-oc-jfm">
+                    <rect key="frame" x="281" y="210" width="67" height="18"/>
+                    <buttonCell key="cell" type="radio" title="Neutral" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="tFN-hj-Eg0">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7jh-vS-SI9">
+                    <rect key="frame" x="281" y="185" width="64" height="18"/>
+                    <buttonCell key="cell" type="radio" title="Frantic" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="OzS-17-5u3">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAX-Is-9RO">
+                    <rect key="frame" x="351" y="235" width="66" height="18"/>
+                    <buttonCell key="cell" type="check" title="Victory" bezelStyle="regularSquare" imagePosition="left" inset="2" id="aO8-ee-Fs0">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6B-0D-T0q">
+                    <rect key="frame" x="74" y="183" width="72" height="71"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="_avatar" id="vD8-bJ-00g"/>
+                </imageView>
             </subviews>
             <constraints>
                 <constraint firstItem="55F-CR-IUP" firstAttribute="top" secondItem="uAF-qj-qyp" secondAttribute="bottom" constant="79" id="FTh-SB-DYs"/>
@@ -85,5 +117,6 @@
     <resources>
         <image name="NSGoLeftTemplate" width="9" height="12"/>
         <image name="NSGoRightTemplate" width="9" height="12"/>
+        <image name="_avatar" width="404" height="402"/>
     </resources>
 </document>

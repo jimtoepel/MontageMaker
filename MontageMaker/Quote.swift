@@ -15,7 +15,7 @@ struct Quote {
     
     
     static let all: [Quote] = [
-        Quote(text: "Never Put off until tomorrow what you an do the day after tomorrow.", author: "Mark Twain"),
+        Quote(text: "Never Put off until tomorrow what you can do the day after tomorrow.", author: "Mark Twain"),
         Quote(text: "Efficiency is doing better what is already being done.", author: "Peter Drucker"),
         Quote(text: "To infinity and beyond!", author: "Buzz Lightyear"),
         Quote(text: "May the force be with you.", author: "Han Solo"),
@@ -26,11 +26,9 @@ struct Quote {
 }
 
 
-/*
 
 extension Quote: CustomStringConvertible {
-    var descriptions: String {
+    var description: String {
         return "\"\(text)\" - \(author)"
     }
 }
- */

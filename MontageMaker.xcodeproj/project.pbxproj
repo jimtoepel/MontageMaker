@@ -15,6 +15,11 @@
 		B12AD4661C8A757900E33707 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12AD4641C8A757900E33707 /* QuotesViewController.swift */; };
 		B12AD4671C8A757900E33707 /* QuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12AD4651C8A757900E33707 /* QuotesViewController.xib */; };
 		B19B43921C8BA5F800FF0342 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B43911C8BA5F800FF0342 /* EventMonitor.swift */; };
+		B19B439B1C8BB0D600FF0342 /* _frantic.png in Resources */ = {isa = PBXBuildFile; fileRef = B19B43961C8BB0D600FF0342 /* _frantic.png */; };
+		B19B439C1C8BB0D600FF0342 /* _victory.png in Resources */ = {isa = PBXBuildFile; fileRef = B19B43971C8BB0D600FF0342 /* _victory.png */; };
+		B19B439D1C8BB0D600FF0342 /* _neutral.png in Resources */ = {isa = PBXBuildFile; fileRef = B19B43981C8BB0D600FF0342 /* _neutral.png */; };
+		B19B439E1C8BB0D600FF0342 /* _avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = B19B43991C8BB0D600FF0342 /* _avatar.png */; };
+		B19B43A11C8BB0FB00FF0342 /* _happy.png in Resources */ = {isa = PBXBuildFile; fileRef = B19B43A01C8BB0FB00FF0342 /* _happy.png */; };
 		B1F76BC21C8B6CE50088570E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F76BC11C8B6CE50088570E /* Quote.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,11 @@
 		B12AD4641C8A757900E33707 /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		B12AD4651C8A757900E33707 /* QuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesViewController.xib; sourceTree = "<group>"; };
 		B19B43911C8BA5F800FF0342 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		B19B43961C8BB0D600FF0342 /* _frantic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _frantic.png; sourceTree = "<group>"; };
+		B19B43971C8BB0D600FF0342 /* _victory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _victory.png; sourceTree = "<group>"; };
+		B19B43981C8BB0D600FF0342 /* _neutral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _neutral.png; sourceTree = "<group>"; };
+		B19B43991C8BB0D600FF0342 /* _avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _avatar.png; sourceTree = "<group>"; };
+		B19B43A01C8BB0FB00FF0342 /* _happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _happy.png; sourceTree = "<group>"; };
 		B1F76BC11C8B6CE50088570E /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +111,7 @@
 		B1050CE71C87FEF20050E888 /* MontageMaker */ = {
 			isa = PBXGroup;
 			children = (
+				B19B43951C8BAFFA00FF0342 /* Images */,
 				B12AD4681C8A758800E33707 /* Quotes */,
 				B1050CE81C87FEF20050E888 /* AppDelegate.swift */,
 				B1F76BC11C8B6CE50088570E /* Quote.swift */,
@@ -137,6 +148,18 @@
 				B12AD4651C8A757900E33707 /* QuotesViewController.xib */,
 			);
 			name = Quotes;
+			sourceTree = "<group>";
+		};
+		B19B43951C8BAFFA00FF0342 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B19B43961C8BB0D600FF0342 /* _frantic.png */,
+				B19B43971C8BB0D600FF0342 /* _victory.png */,
+				B19B43981C8BB0D600FF0342 /* _neutral.png */,
+				B19B43991C8BB0D600FF0342 /* _avatar.png */,
+				B19B43A01C8BB0FB00FF0342 /* _happy.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +266,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19B439C1C8BB0D600FF0342 /* _victory.png in Resources */,
 				B12AD4671C8A757900E33707 /* QuotesViewController.xib in Resources */,
+				B19B439D1C8BB0D600FF0342 /* _neutral.png in Resources */,
+				B19B439E1C8BB0D600FF0342 /* _avatar.png in Resources */,
+				B19B43A11C8BB0FB00FF0342 /* _happy.png in Resources */,
 				B1050CEB1C87FEF20050E888 /* Assets.xcassets in Resources */,
+				B19B439B1C8BB0D600FF0342 /* _frantic.png in Resources */,
 				B1050CEE1C87FEF20050E888 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
