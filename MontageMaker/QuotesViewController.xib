@@ -17,17 +17,6 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-qj-qyp">
-                    <rect key="frame" x="55" y="120" width="370" height="43"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Quote" placeholderString="&quot;Quote Goes Here&quot;" id="gDq-nn-ZN1">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                    <connections>
-                        <outlet property="delegate" destination="-2" id="dCo-gv-qVC"/>
-                    </connections>
-                </textField>
                 <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23H-I2-Dgx">
                     <rect key="frame" x="429" y="12" width="33" height="247"/>
                     <constraints>
@@ -64,6 +53,20 @@
                         <action selector="quit:" target="-2" id="hqj-VL-gNI"/>
                     </connections>
                 </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-qj-qyp">
+                    <rect key="frame" x="66" y="120" width="349" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="2Yf-oj-00f"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="&quot;This is a bunch of test verbage to see if word wrap works? It should!&quot; - Jim Toepel" placeholderString="" id="gDq-nn-ZN1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="dCo-gv-qVC"/>
+                    </connections>
+                </textField>
             </subviews>
             <constraints>
                 <constraint firstItem="55F-CR-IUP" firstAttribute="top" secondItem="uAF-qj-qyp" secondAttribute="bottom" constant="79" id="FTh-SB-DYs"/>
