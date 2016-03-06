@@ -95,7 +95,11 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6B-0D-T0q">
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8iT-cJ-YPt" userLabel="Background">
+                    <rect key="frame" x="74" y="183" width="72" height="71"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="_happy" id="EzC-Oj-r9X"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6B-0D-T0q" userLabel="Avatar">
                     <rect key="frame" x="74" y="183" width="72" height="71"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="_avatar" id="vD8-bJ-00g"/>
                 </imageView>
@@ -118,5 +122,6 @@
         <image name="NSGoLeftTemplate" width="9" height="12"/>
         <image name="NSGoRightTemplate" width="9" height="12"/>
         <image name="_avatar" width="404" height="402"/>
+        <image name="_happy" width="404" height="402"/>
     </resources>
 </document>
