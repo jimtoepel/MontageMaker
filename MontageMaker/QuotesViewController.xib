@@ -7,7 +7,12 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="QuotesViewController" customModule="MontageMaker" customModuleProvider="target">
             <connections>
+                <outlet property="playPause" destination="0cR-Ip-5ob" id="rTj-PB-IZd"/>
+                <outlet property="playPauseMusic" destination="R6K-7d-b9o" id="TpY-GB-Ryr"/>
                 <outlet property="quoteLabel" destination="uAF-qj-qyp" id="ksd-vc-rgk"/>
+                <outlet property="stopMusic" destination="SIG-MC-0uP" id="Doc-mY-o3d"/>
+                <outlet property="trackTime" destination="fzV-Gi-6Ra" id="hez-7E-D6f"/>
+                <outlet property="trackTitle" destination="koC-IA-EYk" id="dhI-kb-UPw"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -96,13 +101,43 @@
                     </buttonCell>
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8iT-cJ-YPt" userLabel="Background">
-                    <rect key="frame" x="74" y="183" width="72" height="71"/>
+                    <rect key="frame" x="66" y="184" width="72" height="71"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="_happy" id="EzC-Oj-r9X"/>
                 </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6B-0D-T0q" userLabel="Avatar">
-                    <rect key="frame" x="74" y="183" width="72" height="71"/>
+                    <rect key="frame" x="66" y="184" width="72" height="71"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="_avatar" id="vD8-bJ-00g"/>
                 </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koC-IA-EYk">
+                    <rect key="frame" x="148" y="95" width="184" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="title" id="IYt-kG-pdO">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzV-Gi-6Ra">
+                    <rect key="frame" x="195" y="51" width="91" height="36"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="00:00" id="fbV-bq-Hg2">
+                        <font key="font" metaFont="system" size="30"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6K-7d-b9o">
+                    <rect key="frame" x="66" y="51" width="48" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="playpause" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0cR-Ip-5ob">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIG-MC-0uP">
+                    <rect key="frame" x="367" y="51" width="48" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="stop" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dHd-2j-V3R">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="55F-CR-IUP" firstAttribute="top" secondItem="uAF-qj-qyp" secondAttribute="bottom" constant="79" id="FTh-SB-DYs"/>
@@ -123,5 +158,7 @@
         <image name="NSGoRightTemplate" width="9" height="12"/>
         <image name="_avatar" width="404" height="402"/>
         <image name="_happy" width="404" height="402"/>
+        <image name="playpause" width="128" height="128"/>
+        <image name="stop" width="128" height="128"/>
     </resources>
 </document>

@@ -14,6 +14,9 @@
 		B1050D041C87FEF20050E888 /* MontageMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1050D031C87FEF20050E888 /* MontageMakerUITests.swift */; };
 		B12AD4661C8A757900E33707 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12AD4641C8A757900E33707 /* QuotesViewController.swift */; };
 		B12AD4671C8A757900E33707 /* QuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12AD4651C8A757900E33707 /* QuotesViewController.xib */; };
+		B18D07FF1C8E8EE9005785F4 /* Final Fantasy VII - Victory Fanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B18D07FE1C8E8EE9005785F4 /* Final Fantasy VII - Victory Fanfare.mp3 */; };
+		B18D08061C8E90B2005785F4 /* playpause.png in Resources */ = {isa = PBXBuildFile; fileRef = B18D08051C8E90B2005785F4 /* playpause.png */; };
+		B18D08081C8E90B7005785F4 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = B18D08071C8E90B7005785F4 /* stop.png */; };
 		B19B43921C8BA5F800FF0342 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B43911C8BA5F800FF0342 /* EventMonitor.swift */; };
 		B19B439B1C8BB0D600FF0342 /* _frantic.png in Resources */ = {isa = PBXBuildFile; fileRef = B19B43961C8BB0D600FF0342 /* _frantic.png */; };
 		B19B439C1C8BB0D600FF0342 /* _victory.png in Resources */ = {isa = PBXBuildFile; fileRef = B19B43971C8BB0D600FF0342 /* _victory.png */; };
@@ -54,6 +57,9 @@
 		B1050D051C87FEF20050E888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B12AD4641C8A757900E33707 /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		B12AD4651C8A757900E33707 /* QuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesViewController.xib; sourceTree = "<group>"; };
+		B18D07FE1C8E8EE9005785F4 /* Final Fantasy VII - Victory Fanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Final Fantasy VII - Victory Fanfare.mp3"; sourceTree = "<group>"; };
+		B18D08051C8E90B2005785F4 /* playpause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playpause.png; sourceTree = "<group>"; };
+		B18D08071C8E90B7005785F4 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		B19B43911C8BA5F800FF0342 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		B19B43961C8BB0D600FF0342 /* _frantic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _frantic.png; sourceTree = "<group>"; };
 		B19B43971C8BB0D600FF0342 /* _victory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _victory.png; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 		B1050CE71C87FEF20050E888 /* MontageMaker */ = {
 			isa = PBXGroup;
 			children = (
+				B18D08041C8E8FC8005785F4 /* MediaPlayer */,
 				B19B43951C8BAFFA00FF0342 /* Images */,
 				B12AD4681C8A758800E33707 /* Quotes */,
 				B1050CE81C87FEF20050E888 /* AppDelegate.swift */,
@@ -148,6 +155,16 @@
 				B12AD4651C8A757900E33707 /* QuotesViewController.xib */,
 			);
 			name = Quotes;
+			sourceTree = "<group>";
+		};
+		B18D08041C8E8FC8005785F4 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				B18D07FE1C8E8EE9005785F4 /* Final Fantasy VII - Victory Fanfare.mp3 */,
+				B18D08051C8E90B2005785F4 /* playpause.png */,
+				B18D08071C8E90B7005785F4 /* stop.png */,
+			);
+			name = MediaPlayer;
 			sourceTree = "<group>";
 		};
 		B19B43951C8BAFFA00FF0342 /* Images */ = {
@@ -267,11 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19B439C1C8BB0D600FF0342 /* _victory.png in Resources */,
+				B18D07FF1C8E8EE9005785F4 /* Final Fantasy VII - Victory Fanfare.mp3 in Resources */,
 				B12AD4671C8A757900E33707 /* QuotesViewController.xib in Resources */,
 				B19B439D1C8BB0D600FF0342 /* _neutral.png in Resources */,
 				B19B439E1C8BB0D600FF0342 /* _avatar.png in Resources */,
 				B19B43A11C8BB0FB00FF0342 /* _happy.png in Resources */,
+				B18D08061C8E90B2005785F4 /* playpause.png in Resources */,
 				B1050CEB1C87FEF20050E888 /* Assets.xcassets in Resources */,
+				B18D08081C8E90B7005785F4 /* stop.png in Resources */,
 				B19B439B1C8BB0D600FF0342 /* _frantic.png in Resources */,
 				B1050CEE1C87FEF20050E888 /* MainMenu.xib in Resources */,
 			);
