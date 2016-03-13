@@ -7,7 +7,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="QuotesViewController" customModule="MontageMaker" customModuleProvider="target">
             <connections>
-                <outlet property="playPause" destination="0cR-Ip-5ob" id="rTj-PB-IZd"/>
                 <outlet property="playPauseMusic" destination="R6K-7d-b9o" id="TpY-GB-Ryr"/>
                 <outlet property="quoteLabel" destination="uAF-qj-qyp" id="ksd-vc-rgk"/>
                 <outlet property="stopMusic" destination="SIG-MC-0uP" id="Doc-mY-o3d"/>
@@ -129,6 +128,9 @@
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="playpause" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0cR-Ip-5ob">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
+                        <connections>
+                            <action selector="playPauseMusic:" target="-2" id="rPU-Uu-9Zi"/>
+                        </connections>
                     </buttonCell>
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIG-MC-0uP">

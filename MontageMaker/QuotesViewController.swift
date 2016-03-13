@@ -33,13 +33,17 @@ class QuotesViewController: NSViewController {
         super.viewWillAppear()
         
         currentQuoteIndex = 0
-        /*
-        trackTitle.Title = "Final Fantasy - Victory!"
-        var path = NSBundle.mainBundle().URLForResource("Final Fantasy VII - Victory Fanfare", withExtension: "mp3")
-        var error:NSError?
         
-        audioPlayer = AVAudioPlayer(contentsOfURL: path!, error: &error)
-        */
+        
+        trackTitle.stringValue = "Final Fantasy - Victory!"
+        let path = NSBundle.mainBundle().URLForResource("Final Fantasy VII - Victory Fanfare", withExtension: "mp3")
+        
+        do {
+        try audioPlayer = AVAudioPlayer(contentsOfURL: path!)
+        } catch {
+            print ("Player not available")
+        }
+            
     }
     
     func updateQuote() {
@@ -63,6 +67,20 @@ extension QuotesViewController {
     
     @IBAction func quit(sender: NSButton){
         NSApplication.sharedApplication().terminate(sender)
+    }
+    
+    @IBAction func playPauseMusic(sender:AnyObject) {
+        if isPlaying {
+            audioPlayer.pause()
+            print("paused")
+            isPlaying = false
+        } else {
+            audioPlayer.play()
+            print("playing")
+            isPlaying = true
+            
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
+        }
     }
     
     
