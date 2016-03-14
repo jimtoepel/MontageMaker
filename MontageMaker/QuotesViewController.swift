@@ -83,5 +83,20 @@ extension QuotesViewController {
         }
     }
     
+    @IBAction func stopMusic(sender: AnyObject) {
+        audioPlayer.stop()
+        audioPlayer.currentTime = 0
+        isPlaying = false
+    }
+    
+    func updateTime() {
+        var currentTime = Int(audioPlayer.currentTime)
+        var minutes = currentTime/60
+        var seconds = currentTime - minutes * 60
+        
+        trackTime.stringValue = NSString(format: "%02d:%02d", minutes, seconds) as String
+        
+    }
+    
     
 }
